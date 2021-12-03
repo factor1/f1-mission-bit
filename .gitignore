@@ -1,0 +1,8 @@
+.DS_Store
+**/*/.DS_Store
+node_modules/
+bower_components/
+*.log
+error_log
+.cache
+.env
