@@ -11,6 +11,7 @@ get_header(); ?>
 
 <style>
   .styleguide .container {
+    margin-top: 100px;
     padding: 50px 0;
   }
 
