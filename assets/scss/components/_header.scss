@@ -26,3 +26,16 @@
     margin-right: rem(30);
   }
 }
+
+// Media Queries 
+@media screen and (max-width: $small-breakpoint) {
+  .site-header {
+    .container {
+      padding: rem(15) 0 rem(10);
+    }
+    
+    &__logo {
+      width: rem(150);
+    }
+  }
+}

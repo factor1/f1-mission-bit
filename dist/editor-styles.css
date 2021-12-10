@@ -34,7 +34,7 @@ h5 {
 }
 
 h6 {
-  margin: 0 0 20px;
+  margin: 0 0 15px;
   font: normal 700 20px/1.2 'Roboto', sans-serif;
   letter-spacing: -0.01em;
   color: #212121;
@@ -61,6 +61,12 @@ a {
 a:focus,
 a:hover {
   color: #3e4786;
+}
+
+/* Typography classes  */
+.small-text {
+  font-size: 14px;
+  line-height: 1.43;
 }
 
 *[style*="color: #fff"],

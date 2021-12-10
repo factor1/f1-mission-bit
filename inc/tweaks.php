@@ -235,9 +235,9 @@
   function custom_wysiwyg_options( $init_array ) {
     $style_formats = array(
       array(
-        'title' => 'Hero Headline',
-  			'inline' => 'span',
-        'classes' => 'hero__headline',
+        'title' => 'Small Text',
+  			'block' => 'p',
+        'classes' => 'small-text',
   			'wrapper' => false,
       ),
     );
@@ -246,7 +246,7 @@
     $init_array['style_formats'] = wp_json_encode( $style_formats );
     return $init_array;
   }
-  // add_filter( 'tiny_mce_before_init', 'custom_wysiwyg_options' );
+  add_filter( 'tiny_mce_before_init', 'custom_wysiwyg_options' );
 
   // Add editor styles from custom wysiwyg options
   function custom_editor_styles() {

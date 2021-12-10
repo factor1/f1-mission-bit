@@ -1781,7 +1781,7 @@ h5 {
   color: #212121; }
 
 h6 {
-  margin: 0 0 1.25rem;
+  margin: 0 0 0.9375rem;
   font: normal 700 1.25rem/1.2 "Roboto", sans-serif;
   letter-spacing: -0.01em;
   color: #212121; }
@@ -1796,6 +1796,10 @@ a {
   transition: all .4s ease; }
   a:focus, a:hover {
     color: #3e4786; }
+
+.small-text {
+  font-size: 0.875rem;
+  line-height: 1.43; }
 
 @media screen and (max-width: 47.9375em) {
   h1 {
@@ -2164,61 +2168,147 @@ nav a {
       font-weight: 400;
       font-size: 1.125rem; }
 
+.nav--footer {
+  position: relative;
+  right: -0.625rem;
+  margin-bottom: 5rem; }
+  .nav--footer ul {
+    flex-wrap: wrap; }
+  .nav--footer a {
+    color: #fff; }
+    .nav--footer a:focus, .nav--footer a:hover {
+      color: #61cabb; }
+  .nav--footer > ul {
+    justify-content: flex-end; }
+    .nav--footer > ul > li {
+      flex: 0 1 auto;
+      max-width: 8.75rem;
+      padding: 0 0.75rem; }
+      .nav--footer > ul > li > a {
+        padding: 0 0 0.3125rem;
+        font: 700 1.125rem/1.2 "Roboto", sans-serif;
+        letter-spacing: -0.01em; }
+  .nav--footer .nav-button {
+    flex: 0 1 auto;
+    margin-top: -0.3125rem;
+    padding: 0 0.3125rem; }
+    .nav--footer .nav-button a {
+      width: auto;
+      padding: 0.5rem 1.25rem;
+      border-radius: 6.25rem;
+      font: 700 1.125rem/1 "Roboto", sans-serif;
+      letter-spacing: 0.02em;
+      text-align: center;
+      text-decoration: none;
+      outline: none;
+      -webkit-appearance: none;
+      transition: all .4s ease; }
+      .nav--footer .nav-button a:focus, .nav--footer .nav-button a:hover {
+        transform: translateY(-5px); }
+    .nav--footer .nav-button.teal a {
+      border: 0.0625rem solid #61cabb;
+      background-color: #61cabb;
+      color: #fff; }
+    .nav--footer .nav-button.red a {
+      border: 0.0625rem solid #f1563e;
+      background-color: #f1563e;
+      color: #fff; }
+    .nav--footer .nav-button.navy a {
+      border: 0.0625rem solid #3e4786;
+      background-color: #3e4786;
+      color: #fff; }
+  .nav--footer .sub-menu li {
+    flex: 0 1 100%; }
+  .nav--footer .sub-menu a {
+    padding: 0.375rem 0;
+    font: 300 1rem/1.19 "Roboto", sans-serif;
+    letter-spacing: -0.01em; }
+
+@media screen and (max-width: 47.9375em) {
+  .nav--footer {
+    right: 0;
+    margin-bottom: 2.5rem; }
+    .nav--footer > ul {
+      justify-content: center; }
+      .nav--footer > ul > li {
+        flex: 0 1 100%;
+        max-width: 100%;
+        padding: 0.625rem;
+        text-align: center; }
+    .nav--footer .nav-button {
+      margin-top: 0.625rem;
+      margin-bottom: 0.625rem; } }
+
 /*----------------------------------------------------------------------------
   WordPress Social Menu
   - make sure to include FontAwesome for this to work!
 ----------------------------------------------------------------------------*/
-.menu-social ul {
-  margin: 0;
-  padding: 0;
-  text-align: inherit;
-  list-style: none; }
-  .menu-social ul li {
-    display: inline-block;
-    position: relative;
-    padding: 0 .625rem; }
-    .menu-social ul li a {
+.menu-social {
+  margin-left: -0.625rem; }
+  .menu-social ul {
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    text-align: inherit;
+    list-style: none; }
+    .menu-social ul li {
       display: inline-block;
-      text-align: center; }
-      .menu-social ul li a:before {
-        display: none;
-        font-family: 'Font Awesome 5 Brands';
-        color: blue; }
-      .menu-social ul li a .svg-inline--fa {
-        font-size: 1.875rem; }
-      .menu-social ul li a:hover {
-        color: purple; }
-    .menu-social ul li a[href*="facebook.com"]::before {
-      content: '\f09a'; }
-    .menu-social ul li a[href*="twitter.com"]::before {
-      content: '\f099'; }
-    .menu-social ul li a[href*="dribbble.com"]::before {
-      content: '\f17d'; }
-    .menu-social ul li a[href*="plus.google.com"]::before {
-      content: '\f0d5'; }
-    .menu-social ul li a[href*="pinterest.com"]::before {
-      content: '\f0d2'; }
-    .menu-social ul li a[href*="github.com"]::before {
-      content: '\f09b'; }
-    .menu-social ul li a[href*="tumblr.com"]::before {
-      content: '\f173'; }
-    .menu-social ul li a[href*="youtube.com"]::before {
-      content: '\f167'; }
-    .menu-social ul li a[href*="flickr.com"]::before {
-      content: '\f16e'; }
-    .menu-social ul li a[href*="vimeo.com"]::before {
-      content: '\f194'; }
-    .menu-social ul li a[href*="instagram.com"]::before {
-      content: '\f16d'; }
-    .menu-social ul li a[href*="linkedin.com"]::before {
-      content: '\f0e1'; }
-    .menu-social ul li a[href*="yelp.com"]::before {
-      content: '\f1e9'; }
-    .menu-social ul li a[href*="mailto:"]::before {
-      content: '\f003'; }
+      position: relative;
+      padding: 0 .625rem; }
+      .menu-social ul li a {
+        display: inline-block;
+        text-align: center; }
+        .menu-social ul li a:before {
+          display: inline-block;
+          font-style: normal;
+          font-variant: normal;
+          text-rendering: auto;
+          -webkit-font-smoothing: antialiased;
+          font-family: 'Font Awesome 5 Brands';
+          font-weight: 400;
+          font-size: 1.75rem;
+          color: #fff;
+          transition: all .4s ease; }
+        .menu-social ul li a:focus:before, .menu-social ul li a:hover:before {
+          color: #61cabb; }
+      .menu-social ul li a[href*="facebook.com"]::before {
+        content: '\f09a'; }
+      .menu-social ul li a[href*="twitter.com"]::before {
+        content: '\f099'; }
+      .menu-social ul li a[href*="dribbble.com"]::before {
+        content: '\f17d'; }
+      .menu-social ul li a[href*="plus.google.com"]::before {
+        content: '\f0d5'; }
+      .menu-social ul li a[href*="pinterest.com"]::before {
+        content: '\f0d2'; }
+      .menu-social ul li a[href*="github.com"]::before {
+        content: '\f09b'; }
+      .menu-social ul li a[href*="tumblr.com"]::before {
+        content: '\f173'; }
+      .menu-social ul li a[href*="youtube.com"]::before {
+        content: '\f167'; }
+      .menu-social ul li a[href*="flickr.com"]::before {
+        content: '\f16e'; }
+      .menu-social ul li a[href*="vimeo.com"]::before {
+        content: '\f194'; }
+      .menu-social ul li a[href*="instagram.com"]::before {
+        content: '\f16d'; }
+      .menu-social ul li a[href*="linkedin.com"]::before {
+        content: '\f0e1'; }
+      .menu-social ul li a[href*="yelp.com"]::before {
+        content: '\f1e9'; }
+      .menu-social ul li a[href*="mailto:"]::before {
+        content: '\f003'; }
 
 .screen-reader-text {
   display: none; }
+
+@media screen and (max-width: 47.9375em) {
+  .menu-social {
+    margin-left: 0;
+    margin-bottom: 1.875rem; }
+    .menu-social ul {
+      justify-content: center; } }
 
 /*------------------------------------------------------------------------------
   Header
@@ -2242,9 +2332,36 @@ nav a {
     width: 11.5625rem;
     margin-right: 1.875rem; }
 
+@media screen and (max-width: 47.9375em) {
+  .site-header .container {
+    padding: 0.9375rem 0 0.625rem; }
+  .site-header__logo {
+    width: 9.375rem; } }
+
 /*------------------------------------------------------------------------------
   Footer
 ------------------------------------------------------------------------------*/
+.site-footer {
+  padding: 0 env(safe-area-inset-right) 0 env(safe-area-inset-left);
+  background-color: #3e4786; }
+  .site-footer .container {
+    padding: 3.75rem 0 2.5rem; }
+  .site-footer h6, .site-footer p {
+    color: #fff; }
+
+.factor1 {
+  font-weight: 700;
+  font-family: 'Helvetica', sans-serif;
+  letter-spacing: -.1em;
+  color: inherit;
+  text-decoration: none; }
+  .factor1:hover {
+    color: #61cabb; }
+
+@media screen and (max-width: 47.9375em) {
+  .site-footer .container {
+    padding: 2.5rem 0 0.625rem; } }
+
 /*----------------------------------------------------------------------------
   Plugin Overrides
 ----------------------------------------------------------------------------*/
