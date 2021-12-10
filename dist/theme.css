@@ -2425,6 +2425,13 @@ nav a {
   .text-split .row > div + div {
     margin-top: 1.875rem; } }
 
+/**
+ * Stats Row (Global)
+ * 
+ * @package F1 Mission Bit 
+ * @author Factor1 Studios
+ * @since 0.0.1
+ */
 /*----------------------------------------------------------------------------
   Plugin Overrides
 ----------------------------------------------------------------------------*/
