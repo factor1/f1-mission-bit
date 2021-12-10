@@ -2407,6 +2407,24 @@ nav a {
   .hero:after {
     padding-bottom: 10%; } }
 
+/**
+ * Text Split (Global)
+ * 
+ * @package F1 Mission Bit 
+ * @author Factor1 Studios
+ * @since 0.0.1
+ */
+.text-split {
+  padding: 0 env(safe-area-inset-right) 0 env(safe-area-inset-left); }
+  .text-split .container {
+    padding: 4.375rem 0; }
+
+@media screen and (max-width: 47.9375em) {
+  .text-split .container {
+    padding: 2.5rem 0; }
+  .text-split .row > div + div {
+    margin-top: 1.875rem; } }
+
 /*----------------------------------------------------------------------------
   Plugin Overrides
 ----------------------------------------------------------------------------*/

@@ -357,3 +357,13 @@
 
   // Remove theme/plugin editors from admin
   define( 'DISALLOW_FILE_EDIT', true );
+
+  // Add ACF Flexible Content section titles 
+  function my_acf_fields_flexible_content_layout_title( $title, $field, $layout, $i ) {
+    // load text sub field
+    if( $text = get_sub_field('section_title') ) {
+      $title .= ': <b>' . esc_html($text) . '</b>';
+    }
+    return $title;
+  }
+  add_filter('acf/fields/flexible_content/layout_title/name=page_sections', 'my_acf_fields_flexible_content_layout_title', 10, 4);
