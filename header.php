@@ -9,7 +9,7 @@
 
   <?php
   /* Theme color for browsers that support it
-  <meta name="theme-color" content="#000">
+  <meta name="theme-color" content="#61cabb">
   */
   ?>
 

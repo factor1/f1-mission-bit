@@ -2362,6 +2362,51 @@ nav a {
   .site-footer .container {
     padding: 2.5rem 0 0.625rem; } }
 
+/**
+ * SCSS Parts
+ * 
+ * @package F1 Mission Bit 
+ * @author Factor1 Studios
+ * @since 0.0.1
+ */
+/**
+ * Hero (Global)
+ * 
+ * @package F1 Mission Bit 
+ * @author Factor1 Studios
+ * @since 0.0.1
+ */
+.hero {
+  position: relative;
+  padding: 0 env(safe-area-inset-right) 0 env(safe-area-inset-left);
+  background-color: #3e4786;
+  overflow: hidden; }
+  .hero__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7; }
+  .hero .container {
+    padding: calc(100px + 15%) 0 20%; }
+  .hero .buttons {
+    margin-bottom: 2.5rem; }
+  .hero:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding-bottom: 12%;
+    background: url("wave.9e2ab20a.svg") left top/cover no-repeat; }
+
+@media screen and (max-width: 47.9375em) {
+  .hero .container {
+    padding: calc(75px + 20%) 0 13%; }
+  .hero:after {
+    padding-bottom: 10%; } }
+
 /*----------------------------------------------------------------------------
   Plugin Overrides
 ----------------------------------------------------------------------------*/
