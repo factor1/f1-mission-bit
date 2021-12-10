@@ -1,10 +1,10 @@
 <?php // Close main ?>
 </main>
 
-<footer>
+<?php // Site Footer 
+get_template_part('components/site-footer'); 
 
-</footer>
+wp_footer(); ?>
 
-<?php wp_footer(); ?>
 </body>
 </html>

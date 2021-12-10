@@ -15,4 +15,7 @@ function featuredURL($size = 'full'){
 
 if( function_exists('prelude_features') ){
   // Use add_image_size below to add additional thumbnail sizes
+  add_image_size( 'admin_thumb', 75, 75, array('center', 'center') );
+  add_image_size( 'header_logo', 370, 90, false );
+  add_image_size( 'footer_logo', 82, 90, false );
 }
