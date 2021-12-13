@@ -19,4 +19,5 @@ if( function_exists('prelude_features') ){
   add_image_size( 'header_logo', 370, 90, false );
   add_image_size( 'footer_logo', 82, 90, false );
   add_image_size( 'hero', 1920, 1000, array('center', 'center') );
+  add_image_size( 'text_image_split', 950, 1000, array('center', 'center') );
 }

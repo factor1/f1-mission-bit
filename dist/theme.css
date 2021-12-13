@@ -2489,6 +2489,53 @@ nav a {
   .centered-text-block .container {
     padding: 3.125rem 0; } }
 
+/**
+ * Text/Image Split (Global)
+ * 
+ * @package F1 Mission Bit 
+ * @author Factor1 Studios
+ * @since 0.0.1
+ */
+.text-image-split {
+  padding: 0 env(safe-area-inset-right) 0 env(safe-area-inset-left); }
+  .text-image-split .container {
+    padding: 6.25rem 0; }
+  .text-image-split__text {
+    padding: 20% 2.5rem; }
+  .text-image-split .row:not(.row--reverse) .col-4 {
+    border-top-left-radius: 1.25rem;
+    border-bottom-left-radius: 1.25rem; }
+  .text-image-split .row:not(.row--reverse) .col-6 {
+    border-top-right-radius: 1.25rem;
+    border-bottom-right-radius: 1.25rem; }
+  .text-image-split .row--reverse .col-4 {
+    border-top-right-radius: 1.25rem;
+    border-bottom-right-radius: 1.25rem; }
+  .text-image-split .row--reverse .col-6 {
+    border-top-left-radius: 1.25rem;
+    border-bottom-left-radius: 1.25rem; }
+
+@media screen and (max-width: 64em) {
+  .text-image-split__text {
+    padding: 15% 1.875rem; } }
+
+@media screen and (max-width: 47.9375em) {
+  .text-image-split .container {
+    padding: 3.125rem 0; }
+  .text-image-split .col-4 {
+    border-top-left-radius: 1.25rem !important;
+    border-top-right-radius: 1.25rem !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    padding-bottom: 75%; }
+  .text-image-split .col-6 {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-left-radius: 1.25rem !important;
+    border-bottom-right-radius: 1.25rem !important; }
+  .text-image-split__text {
+    padding: 10% 1.25rem; } }
+
 /*----------------------------------------------------------------------------
   Plugin Overrides
 ----------------------------------------------------------------------------*/
