@@ -1,4 +1,6 @@
 import Bowser from "bowser";
+import "waypoints/lib/noframework.waypoints.min";
+import { CountUp } from 'countup.js/dist/countUp.min.js';
 
 jQuery(document).ready(function($) {
   // Inside of this function, $() will work as an alias for jQuery()
@@ -72,5 +74,27 @@ jQuery(document).ready(function($) {
 
     $(this).siblings(".sub-menu").slideToggle();
     $(this).toggleClass("active");
-  });  
+  }); 
+  
+  // Stats row animation 
+  if( $(".stats-row").length ) {
+    $(".stats-row__stat").each(function() {
+      var stat = $(this).find(".number span")[0],
+        number = $(this).find(".number").attr("data-number");
+
+      var countUp = new CountUp(stat, number);
+
+      new Waypoint({
+        element: $(this).parents(".stats-row")[0],
+        handler: function() {
+          if (!countUp.error) {
+            countUp.start();
+          } else {
+            console.error(countUp.error);
+          }
+        },
+        offset: 500
+      });
+    });
+  }
 });

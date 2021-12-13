@@ -240,6 +240,12 @@
         'classes' => 'small-text',
   			'wrapper' => false,
       ),
+      array(
+        'title' => 'Number',
+  			'block' => 'h3',
+        'classes' => 'number',
+  			'wrapper' => false,
+      ),
     );
     // Insert the array, JSON ENCODED, into 'style_formats'
     $init_array['style_formats_merge'] = true;

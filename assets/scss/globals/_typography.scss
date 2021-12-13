@@ -67,6 +67,20 @@ a {
   line-height: 1.43;
 }
 
+.number { // h3
+  margin-bottom: rem(5);
+  font-size: rem(64);
+  color: $teal;
+}
+
+.description { // h6
+  font-weight: 700;
+  font-size: rem(22);
+  letter-spacing: 0;
+  text-transform: uppercase;
+  color: $white;
+}
+
 // Media Queries 
 @media screen and (max-width: $small-breakpoint) {
   h1 {
@@ -87,5 +101,13 @@ a {
   
   h5 {
     font-size: rem(22);
+  }
+
+  .number { // h3
+    font-size: rem(42);
+  }
+
+  .description { // h6
+    font-size: rem(18);
   }
 }

@@ -1801,6 +1801,18 @@ a {
   font-size: 0.875rem;
   line-height: 1.43; }
 
+.number {
+  margin-bottom: 0.3125rem;
+  font-size: 4rem;
+  color: #61cabb; }
+
+.description {
+  font-weight: 700;
+  font-size: 1.375rem;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  color: #fff; }
+
 @media screen and (max-width: 47.9375em) {
   h1 {
     font-size: 2.625rem; }
@@ -1811,7 +1823,11 @@ a {
   h4 {
     font-size: 1.625rem; }
   h5 {
-    font-size: 1.375rem; } }
+    font-size: 1.375rem; }
+  .number {
+    font-size: 2.625rem; }
+  .description {
+    font-size: 1.125rem; } }
 
 /*----------------------------------------------------------------------------
   Buttons
@@ -2432,6 +2448,22 @@ nav a {
  * @author Factor1 Studios
  * @since 0.0.1
  */
+.stats-row {
+  padding: 0 env(safe-area-inset-right) 0 env(safe-area-inset-left); }
+  .stats-row .container {
+    padding: 3.125rem 0; }
+  .stats-row .col-3 {
+    margin-top: 1.875rem;
+    margin-bottom: 1.875rem; }
+
+@media screen and (max-width: 47.9375em) {
+  .stats-row .container {
+    padding: 1.875rem 0; }
+  .stats-row .col-3 {
+    min-width: 15.625rem;
+    margin-top: 0.9375rem;
+    margin-bottom: 0.9375rem; } }
+
 /*----------------------------------------------------------------------------
   Plugin Overrides
 ----------------------------------------------------------------------------*/

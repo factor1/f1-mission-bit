@@ -5,3 +5,31 @@
  * @author Factor1 Studios
  * @since 0.0.1
  */
+
+.stats-row {
+  @include iPhoneNotch;
+
+  .container {
+    padding: rem(50) 0;
+  }
+
+  .col-3 {
+    margin-top: rem(30);
+    margin-bottom: rem(30);
+  }
+}
+
+// Media Queries 
+@media screen and (max-width: $small-breakpoint) {
+  .stats-row {
+    .container {
+      padding: rem(30) 0;
+    }
+
+    .col-3 {
+      min-width: rem(250);
+      margin-top: rem(15);
+      margin-bottom: rem(15);
+    }
+  }
+}
