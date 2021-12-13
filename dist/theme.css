@@ -2561,6 +2561,62 @@ nav a {
     margin-top: 1.25rem;
     margin-bottom: 1.25rem; } }
 
+/**
+ * Testimonial Block (Global)
+ * 
+ * @package F1 Mission Bit 
+ * @author Factor1 Studios
+ * @since 0.0.1
+ */
+.testimonial-section {
+  padding: 0 env(safe-area-inset-right) 0 env(safe-area-inset-left); }
+  .testimonial-section .container {
+    padding: 3.125rem 0; }
+  .testimonial-section__block {
+    position: relative;
+    padding: 8% 3.75rem 3%; }
+    .testimonial-section__block:before {
+      content: url("opening-quote.99a27a21.svg");
+      position: absolute;
+      top: 5%;
+      left: 0;
+      width: 3.125rem; }
+    .testimonial-section__block:after {
+      content: url("closing-quote.88d72334.svg");
+      position: absolute;
+      bottom: calc(5% + 70px);
+      right: 0;
+      width: 3.125rem; }
+  .testimonial-section * {
+    color: #fff; }
+  .testimonial-section .row:not(.row--reverse) .col-3 {
+    border-top-left-radius: 1.25rem;
+    border-bottom-left-radius: 1.25rem; }
+  .testimonial-section .row:not(.row--reverse) .col-7 {
+    border-top-right-radius: 1.25rem;
+    border-bottom-right-radius: 1.25rem; }
+  .testimonial-section .row--reverse .col-3 {
+    border-top-right-radius: 1.25rem;
+    border-bottom-right-radius: 1.25rem; }
+  .testimonial-section .row--reverse .col-7 {
+    border-top-left-radius: 1.25rem;
+    border-bottom-left-radius: 1.25rem; }
+
+@media screen and (max-width: 47.9375em) {
+  .testimonial-section .container {
+    padding: 1.5625rem 0; }
+  .testimonial-section .col-3 {
+    border-top-left-radius: 1.25rem !important;
+    border-top-right-radius: 1.25rem !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    padding-bottom: 75%; }
+  .testimonial-section .col-7 {
+    border-top-left-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    border-bottom-left-radius: 1.25rem !important;
+    border-bottom-right-radius: 1.25rem !important; } }
+
 /*----------------------------------------------------------------------------
   Plugin Overrides
 ----------------------------------------------------------------------------*/
