@@ -2536,6 +2536,31 @@ nav a {
   .text-image-split__text {
     padding: 10% 1.25rem; } }
 
+/**
+ * Multi-Column Grid (Global)
+ * 
+ * @package F1 Mission Bit 
+ * @author Factor1 Studios
+ * @since 0.0.1
+ */
+.multi-column-grid {
+  padding: 0 env(safe-area-inset-right) 0 env(safe-area-inset-left); }
+  .multi-column-grid .container {
+    padding-top: 6.25rem; }
+  .multi-column-grid div[class*="block-grid-"] {
+    justify-content: center; }
+  .multi-column-grid .col {
+    margin-top: 3.125rem;
+    margin-bottom: 3.125rem; }
+
+@media screen and (max-width: 47.9375em) {
+  .multi-column-grid .container {
+    padding-top: 3.125rem; }
+  .multi-column-grid .col {
+    min-width: 15.625rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem; } }
+
 /*----------------------------------------------------------------------------
   Plugin Overrides
 ----------------------------------------------------------------------------*/
