@@ -17,6 +17,11 @@
     margin-top: rem(30);
     margin-bottom: rem(30);
   }
+
+  // White bg 
+  &[style*="background-color: #fff"] .description {
+    color: $black;
+  }
 }
 
 // Media Queries 

@@ -9,7 +9,11 @@
 
 if( have_rows('page_sections') ) : while( have_rows('page_sections') ) : the_row();
 
-  if( get_row_layout() == 'text_split' ) : 
+  if( get_row_layout() == 'centered_text_block' ) : 
+
+    get_template_part('parts/global/centered-text-block');
+
+  elseif( get_row_layout() == 'text_split' ) : 
 
     get_template_part('parts/global/text-split');
 

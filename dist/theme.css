@@ -1852,6 +1852,7 @@ a {
   -webkit-appearance: none;
   transition: all .4s ease; }
   .button--teal:focus, .button--teal:hover {
+    color: #fff;
     transform: translateY(-5px); }
   @media screen and (max-width: 47.9375em) {
     .button--teal {
@@ -1874,6 +1875,7 @@ a {
   -webkit-appearance: none;
   transition: all .4s ease; }
   .button--red:focus, .button--red:hover {
+    color: #fff;
     transform: translateY(-5px); }
   @media screen and (max-width: 47.9375em) {
     .button--red {
@@ -1896,6 +1898,7 @@ a {
   -webkit-appearance: none;
   transition: all .4s ease; }
   .button--navy:focus, .button--navy:hover {
+    color: #fff;
     transform: translateY(-5px); }
   @media screen and (max-width: 47.9375em) {
     .button--navy {
@@ -1918,6 +1921,7 @@ a {
   -webkit-appearance: none;
   transition: all .4s ease; }
   .button--white:focus, .button--white:hover {
+    color: #3e4786;
     transform: translateY(-5px); }
   @media screen and (max-width: 47.9375em) {
     .button--white {
@@ -1940,6 +1944,7 @@ a {
   -webkit-appearance: none;
   transition: all .4s ease; }
   .button--white-ghost:focus, .button--white-ghost:hover {
+    color: #212121;
     transform: translateY(-5px); }
   @media screen and (max-width: 47.9375em) {
     .button--white-ghost {
@@ -2455,6 +2460,8 @@ nav a {
   .stats-row .col-3 {
     margin-top: 1.875rem;
     margin-bottom: 1.875rem; }
+  .stats-row[style*="background-color: #fff"] .description {
+    color: #212121; }
 
 @media screen and (max-width: 47.9375em) {
   .stats-row .container {
@@ -2463,6 +2470,24 @@ nav a {
     min-width: 15.625rem;
     margin-top: 0.9375rem;
     margin-bottom: 0.9375rem; } }
+
+/**
+ * Centered Text Block (Global)
+ * 
+ * @package F1 Mission Bit 
+ * @author Factor1 Studios
+ * @since 0.0.1
+ */
+.centered-text-block {
+  padding: 0 env(safe-area-inset-right) 0 env(safe-area-inset-left); }
+  .centered-text-block .container {
+    padding: 6.25rem 0; }
+  .centered-text-block .buttons {
+    margin-top: 1.875rem; }
+
+@media screen and (max-width: 47.9375em) {
+  .centered-text-block .container {
+    padding: 3.125rem 0; } }
 
 /*----------------------------------------------------------------------------
   Plugin Overrides
