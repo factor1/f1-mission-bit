@@ -1,8 +1,10 @@
 import Bowser from "bowser";
+import $ from "jquery";
 import "waypoints/lib/noframework.waypoints.min";
 import { CountUp } from 'countup.js/dist/countUp.min.js';
+import "slick-carousel/slick/slick";
 
-jQuery(document).ready(function($) {
+$(document).ready(function() {
   // Inside of this function, $() will work as an alias for jQuery()
   // and other libraries also using $ will not be accessible under this shortcut
   // https://codex.wordpress.org/Function_Reference/wp_enqueue_script#jQuery_noConflict_Wrappers
@@ -95,6 +97,29 @@ jQuery(document).ready(function($) {
         },
         offset: 500
       });
+    });
+  }
+
+  // Logo Slider 
+  if( $(".logo-slider").length ) {
+    $(".logo-slider__slider").slick({
+      autoplay: true,
+      autoplaySpeed: 5000,
+      slidesToShow: 6,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 4
+          }
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 2
+          }
+        }
+      ]
     });
   }
 });

@@ -33,6 +33,10 @@ if( have_rows('page_sections') ) : while( have_rows('page_sections') ) : the_row
 
     get_template_part('parts/global/testimonial-block');
 
+  elseif( get_row_layout() == 'logo_slider' ) : 
+
+    get_template_part('parts/global/logo-slider');
+
   endif;
 
 endwhile; endif; ?>

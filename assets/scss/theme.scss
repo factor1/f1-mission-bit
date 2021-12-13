@@ -20,6 +20,10 @@
 @import "settings/ginger-settings";
 @import "./node_modules/ginger-grid/ginger";
 
+// Slick
+@import 'settings/slick-settings';
+@import './node_modules/slick-carousel/slick/slick.scss';
+
 // Mixins
 @import "mixins/sugar";
 
