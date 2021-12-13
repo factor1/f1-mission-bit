@@ -75,6 +75,11 @@ a:hover {
   color: #61cabb;
 }
 
+.two-column-list {
+  column-count: 2;
+  column-gap: 100px;
+}
+
 *[style*="color: #fff"],
 *[style*="color: #fff;"],
 *[style*="color: #ffffff"],

@@ -246,6 +246,12 @@
         'classes' => 'number',
   			'wrapper' => false,
       ),
+      array(
+        'title' => 'Two-Column List',
+  			'selector' => 'ul',
+        'classes' => 'two-column-list',
+  			'wrapper' => true,
+      ),
     );
     // Insert the array, JSON ENCODED, into 'style_formats'
     $init_array['style_formats_merge'] = true;

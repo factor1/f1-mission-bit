@@ -81,6 +81,11 @@ a {
   color: $white;
 }
 
+.two-column-list { // ul
+  column-count: 2;
+  column-gap: rem(100);
+}
+
 // Media Queries 
 @media screen and (max-width: $small-breakpoint) {
   h1 {
@@ -109,5 +114,9 @@ a {
 
   .description { // h6
     font-size: rem(18);
+  }
+
+  .two-column-list { // ul
+    column-count: 1;
   }
 }
