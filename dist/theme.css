@@ -2823,7 +2823,8 @@ input[type="submit"] {
     width: 11.5625rem;
     margin-right: 1.875rem; }
 
-.single main {
+.single main,
+.error404 main {
   margin-top: 6.25rem; }
 
 @media screen and (max-width: 47.9375em) {

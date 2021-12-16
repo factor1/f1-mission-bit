@@ -27,8 +27,11 @@
   }
 }
 
-.single main {
-  margin-top: rem(100);
+.single,
+.error404 {
+  main {
+    margin-top: rem(100);
+  }
 }
 
 // Media Queries 
