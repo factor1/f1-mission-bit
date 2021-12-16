@@ -27,6 +27,13 @@
   }
 }
 
+.single,
+.error404 {
+  main {
+    margin-top: rem(100);
+  }
+}
+
 // Media Queries 
 @media screen and (max-width: $small-breakpoint) {
   .site-header {

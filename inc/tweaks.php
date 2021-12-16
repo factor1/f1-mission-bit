@@ -46,9 +46,7 @@
 
   // Customize the default read more link
   function prelude_continue_reading_link() {
-    return ' <a href="' . get_permalink() . '">' .
-     __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'theme-slug' ) .
-     '</a>';
+    return '';
   }
 
   // Customize the default ellipsis (...)
@@ -273,20 +271,20 @@
 
   	echo '<style type="text/css">
       .login {
-        background: #f1f2f2;
+        font-family: "Roboto", sans-serif;
       }
       .login .message,
       .login #login_error {
         margin-top: 30px;
-        border-color: #f7941d;
+        border-color: #f1563e;
       }
       .login p a {
-        color: #6d6e71 !important;
+        color: #3e4786 !important;
         transition: all .4s ease;
       }
       .login p a:focus,
       .login p a:hover {
-        color: #f7941d !important;
+        color: #61cabb !important;
       }
       .login input[type="text"]:active,
       .login input[type="text"]:focus,
@@ -310,19 +308,22 @@
       input[type=number]:focus,
       select:focus,
       textarea:focus {
-        border-color: #f7941d;
-        box-shadow: 0 0 2px #f7941d;
+        border-color: #61cabb;
+        box-shadow: 0 0 2px #61cabb;
       }
       .login input[type="submit"] {
-        background-color: #f7941d;
-        border-color: #f7941d;
-        box-shadow: 0 1px 0 #f7941d;
+        background-color: #61cabb;
+        border-color: #61cabb;
+        box-shadow: 0 1px 0 #61cabb;
         text-shadow: none;
+        transition: all .4s ease;
       }
       .login input[type="submit"]:focus,
       .login input[type="submit"]:hover {
-        background-color: transparent;
-        color: #6d6e71;
+        background-color: #3e4786;
+        border-color: #3e4786;
+        box-shadow: 0 1px 0 #3e4786;
+        color: #fff;
       }
     	h1 a {
     		height: 100% !important;
@@ -338,7 +339,7 @@
       }
   	</style>';
   }
-  // add_action('login_head', 'custom_loginlogo');
+  add_action('login_head', 'custom_loginlogo');
 
   // Update login logo link
   function custom_loginlogo_url($url) {

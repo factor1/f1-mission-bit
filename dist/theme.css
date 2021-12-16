@@ -2768,6 +2768,39 @@ input[type="submit"] {
   .gform_wrapper form .half-width {
     grid-column: span 12 !important; } }
 
+/*----------------------------------------------------------------------------
+  Pagination
+----------------------------------------------------------------------------*/
+.pagination .nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.pagination .page-numbers {
+  width: auto;
+  margin: 0.3125rem;
+  padding: 0.5rem 0.9375rem;
+  font-size: 1.5rem;
+  text-decoration: none; }
+
+.pagination .prev,
+.pagination .next {
+  display: inline-block;
+  width: auto;
+  border-radius: 0;
+  height: auto; }
+  .pagination .prev i,
+  .pagination .next i {
+    color: #f1563e;
+    transition: all .4s ease; }
+
+.pagination a.page-numbers:focus i, .pagination a.page-numbers:hover i,
+.pagination .prev:focus i,
+.pagination .prev:hover i,
+.pagination .next:focus i,
+.pagination .next:hover i {
+  color: #61cabb; }
+
 /*------------------------------------------------------------------------------
   Header
 ------------------------------------------------------------------------------*/
@@ -2789,6 +2822,10 @@ input[type="submit"] {
     display: inline-block;
     width: 11.5625rem;
     margin-right: 1.875rem; }
+
+.single main,
+.error404 main {
+  margin-top: 6.25rem; }
 
 @media screen and (max-width: 47.9375em) {
   .site-header .container {
@@ -2924,9 +2961,14 @@ input[type="submit"] {
   .centered-text-block .buttons {
     margin-top: 1.875rem; }
 
+.single__meta {
+  margin-bottom: 1.875rem; }
+
 @media screen and (max-width: 47.9375em) {
   .centered-text-block .container {
-    padding: 3.125rem 0; } }
+    padding: 3.125rem 0; }
+  .single .centered-text-block .row {
+    justify-content: space-between; } }
 
 /**
  * Text/Image Split (Global)
@@ -3108,6 +3150,33 @@ input[type="submit"] {
 @media screen and (max-width: 47.9375em) {
   .logo-slider__slide {
     padding: 0.625rem 3.125rem; } }
+
+/**
+ * Post List
+ * 
+ * @package F1 Mission Bit 
+ * @author Factor1 Studios
+ * @since 0.0.1
+ */
+.post-list .text-columns-image-split:nth-of-type(even) .row {
+  flex-direction: row-reverse; }
+
+.post-list__tax {
+  padding: 0 env(safe-area-inset-right) 0 env(safe-area-inset-left); }
+  .post-list__tax .container {
+    padding-top: 3.125rem; }
+  .post-list__tax + article .container {
+    padding-top: 1.875rem; }
+
+.post-list__nav {
+  padding: 0 env(safe-area-inset-right) 0 env(safe-area-inset-left); }
+  .post-list__nav .container {
+    padding: 0 0 3.125rem; }
+
+.post-list__no-posts {
+  padding: 0 env(safe-area-inset-right) 0 env(safe-area-inset-left); }
+  .post-list__no-posts .container {
+    padding: 3.125rem 0; }
 
 /*----------------------------------------------------------------------------
   Plugin Overrides
