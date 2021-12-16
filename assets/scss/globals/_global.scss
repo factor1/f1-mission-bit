@@ -83,3 +83,16 @@ img{
     height: 100%;
   }
 }
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% + 10px);
+  margin-left: rem(-5);
+
+  figure {
+    margin: rem(5);
+  }
+}

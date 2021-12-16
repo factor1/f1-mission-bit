@@ -20,6 +20,10 @@
 @import "settings/ginger-settings";
 @import "./node_modules/ginger-grid/ginger";
 
+// Slick
+@import 'settings/slick-settings';
+@import './node_modules/slick-carousel/slick/slick.scss';
+
 // Mixins
 @import "mixins/sugar";
 
@@ -33,8 +37,12 @@
 @import "components/menu-icon";
 @import "components/nav";
 @import "components/social-menu";
+@import "components/forms";
 @import "components/header";
 @import "components/footer";
+
+// Parts 
+@import "parts/all";
 
 // Plugin Overrides
 @import "plugins/overrides";

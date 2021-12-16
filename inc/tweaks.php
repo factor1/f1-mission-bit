@@ -240,6 +240,18 @@
         'classes' => 'small-text',
   			'wrapper' => false,
       ),
+      array(
+        'title' => 'Number',
+  			'block' => 'h3',
+        'classes' => 'number',
+  			'wrapper' => false,
+      ),
+      array(
+        'title' => 'Two-Column List',
+  			'selector' => 'ul',
+        'classes' => 'two-column-list',
+  			'wrapper' => true,
+      ),
     );
     // Insert the array, JSON ENCODED, into 'style_formats'
     $init_array['style_formats_merge'] = true;
@@ -357,3 +369,13 @@
 
   // Remove theme/plugin editors from admin
   define( 'DISALLOW_FILE_EDIT', true );
+
+  // Add ACF Flexible Content section titles 
+  function my_acf_fields_flexible_content_layout_title( $title, $field, $layout, $i ) {
+    // load text sub field
+    if( $text = get_sub_field('section_title') ) {
+      $title .= ': <b>' . esc_html($text) . '</b>';
+    }
+    return $title;
+  }
+  add_filter('acf/fields/flexible_content/layout_title/name=page_sections', 'my_acf_fields_flexible_content_layout_title', 10, 4);

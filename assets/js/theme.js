@@ -1,6 +1,10 @@
 import Bowser from "bowser";
+import $ from "jquery";
+import "waypoints/lib/noframework.waypoints.min";
+import { CountUp } from 'countup.js/dist/countUp.min.js';
+import "slick-carousel/slick/slick";
 
-jQuery(document).ready(function($) {
+$(document).ready(function() {
   // Inside of this function, $() will work as an alias for jQuery()
   // and other libraries also using $ will not be accessible under this shortcut
   // https://codex.wordpress.org/Function_Reference/wp_enqueue_script#jQuery_noConflict_Wrappers
@@ -72,5 +76,50 @@ jQuery(document).ready(function($) {
 
     $(this).siblings(".sub-menu").slideToggle();
     $(this).toggleClass("active");
-  });  
+  }); 
+  
+  // Stats row animation 
+  if( $(".stats-row").length ) {
+    $(".stats-row__stat").each(function() {
+      var stat = $(this).find(".number span")[0],
+        number = $(this).find(".number").attr("data-number");
+
+      var countUp = new CountUp(stat, number);
+
+      new Waypoint({
+        element: $(this).parents(".stats-row")[0],
+        handler: function() {
+          if (!countUp.error) {
+            countUp.start();
+          } else {
+            console.error(countUp.error);
+          }
+        },
+        offset: 500
+      });
+    });
+  }
+
+  // Logo Slider 
+  if( $(".logo-slider").length ) {
+    $(".logo-slider__slider").slick({
+      autoplay: true,
+      autoplaySpeed: 5000,
+      slidesToShow: 6,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 4
+          }
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 2
+          }
+        }
+      ]
+    });
+  }
 });

@@ -37,6 +37,7 @@
 
   &:focus,
   &:hover {
+    color: $color;
     transform: translateY(-5px);
   }
 

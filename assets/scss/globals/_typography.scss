@@ -64,7 +64,26 @@ a {
 // Typography classes 
 .small-text { // p 
   font-size: rem(14);
-  line-height: 1.43;
+  line-height: 2;
+}
+
+.number { // h3
+  margin-bottom: rem(5);
+  font-size: rem(64);
+  color: $teal;
+}
+
+.description { // h6
+  font-weight: 700;
+  font-size: rem(22);
+  letter-spacing: 0;
+  text-transform: uppercase;
+  color: $white;
+}
+
+.two-column-list { // ul
+  column-count: 2;
+  column-gap: rem(100);
 }
 
 // Media Queries 
@@ -87,5 +106,17 @@ a {
   
   h5 {
     font-size: rem(22);
+  }
+
+  .number { // h3
+    font-size: rem(42);
+  }
+
+  .description { // h6
+    font-size: rem(18);
+  }
+
+  .two-column-list { // ul
+    column-count: 1;
   }
 }
