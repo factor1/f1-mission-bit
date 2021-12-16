@@ -18,9 +18,17 @@
   }
 }
 
+.single__meta {
+  margin-bottom: rem(30);
+}
+
 // Media Queries
 @media screen and (max-width: $small-breakpoint) {
   .centered-text-block .container {
     padding: rem(50) 0;
+  }
+
+  .single .centered-text-block .row {
+    justify-content: space-between;
   }
 }

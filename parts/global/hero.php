@@ -7,15 +7,21 @@
  * @since 0.0.1
  */
 
+// Check if blog 
+$isBlog = is_home();
+$isCat = is_category();
+$isTag = is_tag();
+
 // Hero Custom Fields 
 $prefix = 'hero_';
-$bg = wp_get_attachment_image_src(get_field($prefix . 'background'), 'hero');
-$hPos = get_field($prefix . 'horizontal_background_alignment'); // 0 - 100
-$vPos = get_field($prefix . 'vertical_background_alignment'); // 0 - 100
-$colSpan = get_field($prefix . 'column_span'); // 6 - 12
-$colAlign = get_field($prefix . 'column_alignment'); // start, center, end
-$content = get_field($prefix . 'content');
-$btnAlign = get_field($prefix . 'button_alignment'); // left, center, right
+$suffix = $isBlog || $isCat || $isTag ? get_option('page_for_posts') : ''; 
+$bg = wp_get_attachment_image_src(get_field($prefix . 'background', $suffix), 'hero');
+$hPos = get_field($prefix . 'horizontal_background_alignment', $suffix); // 0 - 100
+$vPos = get_field($prefix . 'vertical_background_alignment', $suffix); // 0 - 100
+$colSpan = get_field($prefix . 'column_span', $suffix); // 6 - 12
+$colAlign = get_field($prefix . 'column_alignment', $suffix); // start, center, end
+$content = get_field($prefix . 'content', $suffix);
+$btnAlign = get_field($prefix . 'button_alignment', $suffix); // left, center, right
 
 // Bg styles 
 $xPos = $hPos >= 0 ? $hPos . '%' : '50%'; 
@@ -32,11 +38,11 @@ $bgPos = $xPos . ' ' . $yPos; ?>
         <?php echo $content; 
         
         // Optional buttons 
-        if( have_rows($prefix . 'buttons') ) : ?>
+        if( have_rows($prefix . 'buttons', $suffix) ) : ?>
 
           <div class="buttons text-<?php echo $btnAlign; ?>">
 
-            <?php while( have_rows($prefix . 'buttons') ) : the_row(); 
+            <?php while( have_rows($prefix . 'buttons', $suffix) ) : the_row(); 
               $btnColor = get_sub_field('button_color');
               $btn = get_sub_field('button'); ?>
 
