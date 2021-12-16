@@ -23,4 +23,5 @@ if( function_exists('prelude_features') ){
   add_image_size( 'text_image_split', 950, 1000, array('center', 'center') );
   add_image_size( 'testimonial_block', 700, 660, array('center', 'center') );
   add_image_size( 'logo_slide', 400, 400, false );
+  add_image_size( 'text_columns_split', 640, 640, false );
 }
