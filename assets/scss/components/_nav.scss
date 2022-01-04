@@ -153,6 +153,10 @@ nav {
 
     li {
       flex: 0 1 100%;
+
+      &.current-menu-item a {
+        color: $navy;
+      }
     }
 
     a {
@@ -182,7 +186,7 @@ nav {
 .nav--mobile {
   display: none;
   max-height: 100vh;
-  padding-bottom: rem(50);
+  padding-bottom: rem(100);
   overflow-y: scroll;
 
   > ul {
