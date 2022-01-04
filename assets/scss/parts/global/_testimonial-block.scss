@@ -18,19 +18,23 @@
     padding: 8% rem(60) 3%;
 
     &:before {
-      content: url('../img/opening-quote.svg');
+      content: '';
+      background: url('../img/opening-quote.png') center/contain no-repeat;
       position: absolute;
       top: 5%;
       left: 0;
       width: rem(50);
+      height: rem(80);
     }
 
     &:after {
-      content: url('../img/closing-quote.svg');
+      content: '';
+      background: url('../img/closing-quote.png') center/contain no-repeat;
       position: absolute;
       bottom: calc(5% + 70px);
       right: 0;
       width: rem(50);
+      height: rem(80);
     }
   }
 
