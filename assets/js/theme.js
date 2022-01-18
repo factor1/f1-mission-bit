@@ -84,6 +84,13 @@ $(document).ready(function() {
     $(this).siblings(".sub-menu").slideToggle();
     $(this).toggleClass("active");
   }); 
+
+  // Hero anchor scroll 
+  $(".hero__button").on("click", function() {
+    $("html, body").animate({
+      scrollTop: $("#hero-anchor").offset().top,
+    }, 800);
+  });
   
   // Stats row animation 
   if( $(".stats-row").length ) {

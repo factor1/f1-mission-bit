@@ -50,3 +50,8 @@
 @mixin iPhoneNotch() {
   padding: 0 env(safe-area-inset-right) 0 env(safe-area-inset-left);
 }
+
+@keyframes bounce { 
+  0%, 50%, 100% {transform: translateY(0);}
+  50% {transform: translateY(-5px);}
+} 

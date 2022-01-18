@@ -14861,6 +14861,12 @@ headroom.init();
     e.preventDefault();
     (0, _jquery.default)(this).siblings(".sub-menu").slideToggle();
     (0, _jquery.default)(this).toggleClass("active");
+  }); // Hero anchor scroll 
+
+  (0, _jquery.default)(".hero__button").on("click", function () {
+    (0, _jquery.default)("html, body").animate({
+      scrollTop: (0, _jquery.default)("#hero-anchor").offset().top
+    }, 800);
   }); // Stats row animation 
 
   if ((0, _jquery.default)(".stats-row").length) {
