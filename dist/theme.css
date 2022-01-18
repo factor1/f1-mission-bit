@@ -2824,6 +2824,14 @@ input[type="submit"] {
     display: inline-block;
     width: 11.5625rem;
     margin-right: 1.875rem; }
+  .site-header.headroom {
+    transition: all .4s ease; }
+  .site-header.headroom--top {
+    background-color: rgba(255, 255, 255, 0.74) !important; }
+  .site-header.headroom--unpinned {
+    transform: translateY(-100%); }
+  .site-header.headroom--pinned {
+    background-color: rgba(255, 255, 255, 0.9); }
 
 .single main,
 .error404 main {

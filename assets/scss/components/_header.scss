@@ -25,6 +25,22 @@
     width: rem(185);
     margin-right: rem(30);
   }
+
+  &.headroom {
+    transition: all .4s ease;
+  }
+
+  &.headroom--top {
+    background-color: rgba($white, 0.74) !important;
+  }
+
+  &.headroom--unpinned {
+    transform: translateY(-100%);
+  }
+
+  &.headroom--pinned {
+    background-color: rgba($white, 0.9);
+  }
 }
 
 .single,

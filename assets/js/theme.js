@@ -1,8 +1,15 @@
 import Bowser from "bowser";
+import Headroom from "headroom.js";
 import $ from "jquery";
 import "waypoints/lib/noframework.waypoints.min";
 import { CountUp } from 'countup.js/dist/countUp.min.js';
 import "slick-carousel/slick/slick";
+
+// Headroom
+let siteHeader = document.querySelector(".site-header"),
+  headroom = new Headroom(siteHeader);
+
+headroom.init();
 
 $(document).ready(function() {
   // Inside of this function, $() will work as an alias for jQuery()

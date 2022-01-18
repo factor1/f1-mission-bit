@@ -21,6 +21,7 @@ This theme is created with [prelude-wp](https://github.com/prelude-wp).
 "dotenv": "^8.0.0",
 "fs-extra": "^8.1.0",
 "ginger-grid": "^2.3.1",
+"headroom.js": "^0.12.0",
 "jquery": "^3.6.0",
 "lodash": "^4.17.15",
 "path": "^0.12.7",
