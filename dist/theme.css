@@ -3222,8 +3222,116 @@ input[type="submit"] {
     padding: 3.125rem 0; }
 
 /*----------------------------------------------------------------------------
-  Plugin Overrides
+  Events Calendar Overrides
 ----------------------------------------------------------------------------*/
+a,
+button {
+  width: auto !important; }
+  a.tribe-common-c-btn, a.tribe-events-button, a.tribe-events-c-subscribe-dropdown__button-text,
+  button.tribe-common-c-btn,
+  button.tribe-events-button,
+  button.tribe-events-c-subscribe-dropdown__button-text {
+    display: inline-block;
+    margin: 0.3125rem;
+    padding: 0.9375rem 2.5rem;
+    border: 0.0625rem solid #61cabb;
+    border-radius: 6.25rem;
+    background-color: #61cabb;
+    font: 700 1.25rem/1 "Roboto", sans-serif;
+    letter-spacing: 0.02em;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    -webkit-appearance: none;
+    transition: all .4s ease;
+    margin: 0.3125rem !important; }
+    a.tribe-common-c-btn:focus, a.tribe-common-c-btn:hover, a.tribe-events-button:focus, a.tribe-events-button:hover, a.tribe-events-c-subscribe-dropdown__button-text:focus, a.tribe-events-c-subscribe-dropdown__button-text:hover,
+    button.tribe-common-c-btn:focus,
+    button.tribe-common-c-btn:hover,
+    button.tribe-events-button:focus,
+    button.tribe-events-button:hover,
+    button.tribe-events-c-subscribe-dropdown__button-text:focus,
+    button.tribe-events-c-subscribe-dropdown__button-text:hover {
+      color: #fff;
+      transform: translateY(-5px); }
+    @media screen and (max-width: 47.9375em) {
+      a.tribe-common-c-btn, a.tribe-events-button, a.tribe-events-c-subscribe-dropdown__button-text,
+      button.tribe-common-c-btn,
+      button.tribe-events-button,
+      button.tribe-events-c-subscribe-dropdown__button-text {
+        padding: 0.9375rem 1.875rem;
+        font-size: 1.125rem; } }
+  a.tribe-common-h--alt, a.tribe-common-c-btn-icon,
+  button.tribe-common-h--alt,
+  button.tribe-common-c-btn-icon {
+    display: inline-block;
+    margin: 0.3125rem;
+    padding: 0.9375rem 2.5rem;
+    border: 0.0625rem solid #3e4786;
+    border-radius: 6.25rem;
+    background-color: #3e4786;
+    font: 700 1.25rem/1 "Roboto", sans-serif;
+    letter-spacing: 0.02em;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    -webkit-appearance: none;
+    transition: all .4s ease; }
+    a.tribe-common-h--alt:focus, a.tribe-common-h--alt:hover, a.tribe-common-c-btn-icon:focus, a.tribe-common-c-btn-icon:hover,
+    button.tribe-common-h--alt:focus,
+    button.tribe-common-h--alt:hover,
+    button.tribe-common-c-btn-icon:focus,
+    button.tribe-common-c-btn-icon:hover {
+      color: #fff;
+      transform: translateY(-5px); }
+    @media screen and (max-width: 47.9375em) {
+      a.tribe-common-h--alt, a.tribe-common-c-btn-icon,
+      button.tribe-common-h--alt,
+      button.tribe-common-c-btn-icon {
+        padding: 0.9375rem 1.875rem;
+        font-size: 1.125rem; } }
+  a.tribe-events-c-nav__prev, a.tribe-events-c-nav__next,
+  button.tribe-events-c-nav__prev,
+  button.tribe-events-c-nav__next {
+    display: inline-block;
+    margin: 0.3125rem;
+    padding: 0.9375rem 2.5rem;
+    border: 0.0625rem solid #f1563e;
+    border-radius: 6.25rem;
+    background-color: #f1563e;
+    font: 700 1.25rem/1 "Roboto", sans-serif;
+    letter-spacing: 0.02em;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    -webkit-appearance: none;
+    transition: all .4s ease; }
+    a.tribe-events-c-nav__prev:focus, a.tribe-events-c-nav__prev:hover, a.tribe-events-c-nav__next:focus, a.tribe-events-c-nav__next:hover,
+    button.tribe-events-c-nav__prev:focus,
+    button.tribe-events-c-nav__prev:hover,
+    button.tribe-events-c-nav__next:focus,
+    button.tribe-events-c-nav__next:hover {
+      color: #fff;
+      transform: translateY(-5px); }
+    @media screen and (max-width: 47.9375em) {
+      a.tribe-events-c-nav__prev, a.tribe-events-c-nav__next,
+      button.tribe-events-c-nav__prev,
+      button.tribe-events-c-nav__next {
+        padding: 0.9375rem 1.875rem;
+        font-size: 1.125rem; } }
+
+.tribe-events-c-subscribe-dropdown__content {
+  border: 0.0625rem solid #61cabb !important; }
+
+.tribe-common-c-svgicon {
+  margin: 0.3125rem; }
+
+.tribe-events-calendar-month__header-column-title-desktop,
+.tribe-events-calendar-month__day-date-daynum {
+  font-size: 1.5rem; }
 
 
 /*# sourceMappingURL=theme.css.map */

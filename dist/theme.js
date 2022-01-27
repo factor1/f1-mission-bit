@@ -14880,6 +14880,7 @@ headroom.init();
           if (!countUp.error) {
             countUp.start();
           } else {
+            // eslint-disable-next-lin
             console.error(countUp.error);
           }
         },

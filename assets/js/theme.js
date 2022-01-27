@@ -2,7 +2,7 @@ import Bowser from "bowser";
 import Headroom from "headroom.js";
 import $ from "jquery";
 import "waypoints/lib/noframework.waypoints.min";
-import { CountUp } from 'countup.js/dist/countUp.min.js';
+import { CountUp } from "countup.js/dist/countUp.min.js";
 import "slick-carousel/slick/slick";
 
 // Headroom
@@ -106,6 +106,7 @@ $(document).ready(function() {
           if (!countUp.error) {
             countUp.start();
           } else {
+            // eslint-disable-next-lin
             console.error(countUp.error);
           }
         },
