@@ -12,9 +12,13 @@ $isBlog = is_home();
 $isCat = is_category();
 $isTag = is_tag();
 
+// Check if a program archive 
+$isPrograms = is_post_type_archive('program');
+$isProgramCat = is_tax('program-category');
+
 // Hero Custom Fields 
-$prefix = 'hero_';
-$suffix = $isBlog || $isCat || $isTag ? get_option('page_for_posts') : ''; 
+$prefix = $isPrograms || $isProgramCat ? 'programs_hero_' : 'hero_';
+$suffix = $isBlog || $isCat || $isTag ? get_option('page_for_posts') : ($isPrograms || $isProgramCat ? 'option' : ''); 
 $bg = wp_get_attachment_image_src(get_field($prefix . 'background', $suffix), 'hero');
 $hPos = get_field($prefix . 'horizontal_background_alignment', $suffix); // 0 - 100
 $vPos = get_field($prefix . 'vertical_background_alignment', $suffix); // 0 - 100
