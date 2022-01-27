@@ -15,11 +15,11 @@ if( function_exists('acf_add_options_page') ) {
     )
   );
 
-  acf_add_options_page(
-    array(
-      'page_title' => 'Programs Archive',
-      'position' => 21,
-      'icon_url' => 'dashicons-calendar-alt'
-    )
-  );
+  // acf_add_options_page(
+  //   array(
+  //     'page_title' => 'Programs Archive',
+  //     'position' => 21,
+  //     'icon_url' => 'dashicons-calendar-alt'
+  //   )
+  // );
 } ?>
