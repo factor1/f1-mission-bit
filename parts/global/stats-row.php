@@ -35,7 +35,7 @@ if( have_rows($prefix . 'stats') ) : ?>
             $formatOutput = '<span>' . $i . '</span>';
           endif;?>
 
-          <div class="col-3 md-col-4 sm-col-6 text-center">
+          <div class="col-3 md-col-4 sm-col-6 text-center stretch">
 
             <div class="stats-row__stat">
 

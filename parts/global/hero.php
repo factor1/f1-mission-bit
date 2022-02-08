@@ -59,4 +59,10 @@ $bgPos = $xPos . ' ' . $yPos; ?>
       </div>
     </div>
   </div>
+
+  <div class="hero__scroll text-center">
+    <button class="hero__button" value="Scroll down"><i class="fal fa-angle-down"></i></button>
+  </div>
 </section>
+
+<div id="hero-anchor"></div>

@@ -1,8 +1,19 @@
 import Bowser from "bowser";
+import Headroom from "headroom.js";
+import MicroModal from "micromodal";
 import $ from "jquery";
 import "waypoints/lib/noframework.waypoints.min";
-import { CountUp } from 'countup.js/dist/countUp.min.js';
+import { CountUp } from "countup.js/dist/countUp.min.js";
 import "slick-carousel/slick/slick";
+
+// Headroom
+let siteHeader = document.querySelector(".site-header"),
+  headroom = new Headroom(siteHeader);
+
+headroom.init();
+
+// MicroModal
+MicroModal.init();
 
 $(document).ready(function() {
   // Inside of this function, $() will work as an alias for jQuery()
@@ -77,6 +88,13 @@ $(document).ready(function() {
     $(this).siblings(".sub-menu").slideToggle();
     $(this).toggleClass("active");
   }); 
+
+  // Hero anchor scroll 
+  $(".hero__button").on("click", function() {
+    $("html, body").animate({
+      scrollTop: $("#hero-anchor").offset().top,
+    }, 800);
+  });
   
   // Stats row animation 
   if( $(".stats-row").length ) {
@@ -92,6 +110,7 @@ $(document).ready(function() {
           if (!countUp.error) {
             countUp.start();
           } else {
+            // eslint-disable-next-lin
             console.error(countUp.error);
           }
         },

@@ -29,6 +29,30 @@
     margin-bottom: rem(40);
   }
 
+  &__scroll {
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    width: 100%;
+    z-index: 50;
+  }
+
+  &__button {
+    border: none;
+    background-color: transparent;
+    appearance: none;
+    outline-color: $teal;
+    font-size: rem(42);
+    color: $white;
+    transition: color .4s ease;
+    animation: bounce 2s infinite;
+
+    &:focus,
+    &:hover {
+      color: $teal;
+    }
+  }
+
   &:after {
     content: '';
     position: absolute;
@@ -41,10 +65,20 @@
 }
 
 // Media Queries 
+@media screen and (max-width: $medium-breakpoint) {
+  .hero__scroll {
+    bottom: 15%;
+  }
+}
+
 @media screen and (max-width: $small-breakpoint) {
   .hero {
     .container {
       padding: calc(75px + 20%) 0 13%;
+    }
+
+    &__scroll {
+      bottom: 7%;
     }
 
     &:after {

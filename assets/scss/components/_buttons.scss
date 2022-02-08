@@ -26,4 +26,12 @@
   &--white-ghost {
     @include buttons($black, $white, $black);
   }
+
+  &[disabled] {
+    border-color: #d0d0d0;
+    background-color: #d0d0d0;
+    color: $steel;
+    transform: none !important;
+    cursor: not-allowed;
+  }
 }
