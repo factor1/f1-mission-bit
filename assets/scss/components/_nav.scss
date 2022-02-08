@@ -102,31 +102,31 @@ nav {
   }
 
   .menu-item-has-children {
-    &:after {
-      position: absolute;
-      top: rem(-8);
-      bottom: 0;
-      right: 0;
-      margin: auto;
-      height: rem(22);
-      display: inline-block;
-      font-style: normal;
-      font-variant: normal;
-      text-rendering: auto;
-      -webkit-font-smoothing: antialiased;
-      content: '\f107';
-      font-family: 'Font Awesome 5 Pro';
-      font-weight: 400;
-      color: $black;
-      transition: all .4s ease;
-      pointer-events: none;
-    }
+    // &:after {
+    //   position: absolute;
+    //   top: rem(-8);
+    //   bottom: 0;
+    //   right: 0;
+    //   margin: auto;
+    //   height: rem(22);
+    //   display: inline-block;
+    //   font-style: normal;
+    //   font-variant: normal;
+    //   text-rendering: auto;
+    //   -webkit-font-smoothing: antialiased;
+    //   content: '\f107';
+    //   font-family: 'Font Awesome 5 Pro';
+    //   font-weight: 400;
+    //   color: $black;
+    //   transition: all .4s ease;
+    //   pointer-events: none;
+    // }
 
     &:focus,
     &:hover {
-      &:after {
-        color: $teal;
-      }
+      // &:after {
+      //   color: $teal;
+      // }
 
       .sub-menu {
         display: block;
@@ -137,11 +137,12 @@ nav {
   .sub-menu {
     display: none;
     position: absolute;
-    right: rem(-10);
+    // right: rem(-10);
+    right: 0;
     top: calc(100% - 20px);
     flex-wrap: wrap;
     width: 150%;
-    min-width: rem(150);
+    min-width: rem(250);
     margin-top: rem(20);
     padding: rem(10) 0;
     border-radius: rem(5);
@@ -203,44 +204,46 @@ nav {
   }
 
   a {
-    padding: rem(10);
+    padding: rem(15) rem(10);
+    font-size: rem(22);
   }
 
   .nav-button {
-    margin-top: rem(10);
-    margin-bottom: rem(10);
+    margin-top: rem(15);
+    margin-bottom: rem(15);
 
     a {
       display: inline-block;
       width: auto;
+      font-size: rem(22);
     }
   }
 
-  .menu-item-has-children > a {
-    &:after {
-      position: relative;
-      top: rem(2);
-      right: rem(-5);
-      display: inline-block;
-      font-style: normal;
-      font-variant: normal;
-      text-rendering: auto;
-      -webkit-font-smoothing: antialiased;
-      content: '\f107';
-      font-family: 'Font Awesome 5 Pro';
-      font-weight: 400;
-      color: $black;
-      transition: all .4s ease;
-      pointer-events: none;
-    }
-
-    &:focus,
-    &:hover {
-      &:after {
-        color: $teal;
-      }
-    }
-  }
+  // .menu-item-has-children > a {
+    // &:after {
+    //   position: relative;
+    //   top: rem(2);
+    //   right: rem(-5);
+    //   display: inline-block;
+    //   font-style: normal;
+    //   font-variant: normal;
+    //   text-rendering: auto;
+    //   -webkit-font-smoothing: antialiased;
+    //   content: '\f107';
+    //   font-family: 'Font Awesome 5 Pro';
+    //   font-weight: 400;
+    //   color: $black;
+    //   transition: all .4s ease;
+    //   pointer-events: none;
+    // }
+    // 
+    // &:focus,
+    // &:hover {
+    //   &:after {
+    //     color: $teal;
+    //   }
+    // }
+  // }
 
   .sub-menu {
     display: none;

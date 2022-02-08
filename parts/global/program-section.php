@@ -68,6 +68,14 @@ if( $program ) :
                       </a>
                     </div>
 
+                  <?php elseif( $status == 'closed' ) : ?>
+
+                    <div class="buttons">
+                      <button class="button button--red" title="Registration Closed" disabled>
+                        Registration Closed
+                      </button>
+                    </div>
+
                   <?php endif; ?>
 
                 </div>
