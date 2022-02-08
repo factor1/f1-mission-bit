@@ -2809,6 +2809,41 @@ input[type="submit"] {
 .pagination .next:hover i {
   color: #61cabb; }
 
+/**
+ * Staff Tile Component
+ * 
+ * @package F1 Mission Bit 
+ * @author Factor1 Studios
+ * @since 0.0.1
+ */
+.staff-tile__img {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-bottom: 100%;
+  margin-bottom: 1.25rem;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: all .4s ease; }
+  .staff-tile__img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+.staff-tile h6 {
+  color: #3e4786; }
+
+.staff-tile p {
+  margin: 0;
+  line-height: 1.2; }
+
+.staff-tile[data-micromodal-trigger]:focus .staff-tile__img, .staff-tile[data-micromodal-trigger]:hover .staff-tile__img {
+  filter: brightness(0.9);
+  box-shadow: 0 0 0.375rem rgba(97, 202, 187, 0.9);
+  transform: translateY(-5px); }
+
 /*------------------------------------------------------------------------------
   Header
 ------------------------------------------------------------------------------*/
@@ -2874,6 +2909,113 @@ input[type="submit"] {
 @media screen and (max-width: 47.9375em) {
   .site-footer .container {
     padding: 2.5rem 0 0.625rem; } }
+
+/*------------------------------------------------------------------------------
+  Modals
+------------------------------------------------------------------------------*/
+.modal {
+  position: relative;
+  z-index: 999999; }
+
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.modal__container {
+  position: relative;
+  width: 100%;
+  max-width: 50rem;
+  max-height: 100vh;
+  padding: 2.5rem 1.875rem 0.9375rem;
+  border-radius: 4px;
+  background-color: #fff;
+  overflow-y: auto;
+  box-sizing: border-box; }
+
+.modal__close {
+  position: absolute;
+  top: 0.3125rem;
+  right: 0;
+  background: transparent;
+  border: 0; }
+  .modal__close:active, .modal__close:focus, .modal__close:hover {
+    outline: none; }
+    .modal__close:active:before, .modal__close:focus:before, .modal__close:hover:before {
+      color: #61cabb; }
+
+.modal__close:before {
+  content: '\2715';
+  color: #3e4786;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all .4s ease; }
+
+.modal__content h5 {
+  margin-bottom: 0.3125rem;
+  color: #3e4786; }
+
+.modal__content .staff-title {
+  margin-bottom: 0.3125rem; }
+
+.modal__content .staff-links {
+  margin-bottom: 1.25rem;
+  margin-left: -0.3125rem; }
+  .modal__content .staff-links a {
+    padding: 0.3125rem;
+    font-size: 1.5rem; }
+
+@keyframes mmfadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes mmfadeOut {
+  from {
+    opacity: 1; }
+  to {
+    opacity: 0; } }
+
+@keyframes mmslideIn {
+  from {
+    transform: translateY(15%); }
+  to {
+    transform: translateY(0); } }
+
+@keyframes mmslideOut {
+  from {
+    transform: translateY(0); }
+  to {
+    transform: translateY(-10%); } }
+
+.micromodal-slide {
+  display: none; }
+
+.micromodal-slide.is-open {
+  display: block; }
+
+.micromodal-slide[aria-hidden="false"] .modal__overlay {
+  animation: mmfadeIn 0.3s cubic-bezier(0, 0, 0.2, 1); }
+
+.micromodal-slide[aria-hidden="false"] .modal__container {
+  animation: mmslideIn 0.3s cubic-bezier(0, 0, 0.2, 1); }
+
+.micromodal-slide[aria-hidden="true"] .modal__overlay {
+  animation: mmfadeOut 0.3s cubic-bezier(0, 0, 0.2, 1); }
+
+.micromodal-slide[aria-hidden="true"] .modal__container {
+  animation: mmslideOut 0.3s cubic-bezier(0, 0, 0.2, 1); }
+
+.micromodal-slide .modal__container,
+.micromodal-slide .modal__overlay {
+  will-change: transform; }
 
 /**
  * SCSS Parts
@@ -3199,6 +3341,27 @@ input[type="submit"] {
 @media screen and (max-width: 47.9375em) {
   .logo-slider__slide {
     padding: 0.625rem 3.125rem; } }
+
+/**
+ * Staff Grid Section (Global)
+ * 
+ * @package F1 Mission Bit 
+ * @author Factor1 Studios
+ * @since 0.0.1
+ */
+.staff-grid {
+  padding: 0 env(safe-area-inset-right) 0 env(safe-area-inset-left); }
+  .staff-grid .container {
+    padding: 3.125rem 0; }
+  .staff-grid div[class*="block-grid-"] {
+    justify-content: center; }
+  .staff-grid .col {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem; }
+
+@media screen and (max-width: 47.9375em) {
+  .staff-grid .col {
+    min-width: 9.375rem; } }
 
 /**
  * Post List

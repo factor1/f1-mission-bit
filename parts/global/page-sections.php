@@ -45,6 +45,10 @@ if( have_rows('page_sections') ) : while( have_rows('page_sections') ) : the_row
 
     get_template_part('parts/global/program-section');
 
+  elseif( get_row_layout() == 'staff_grid' ) : 
+
+    get_template_part('parts/global/staff-grid-section');
+
   endif;
 
 endwhile; endif; ?>
