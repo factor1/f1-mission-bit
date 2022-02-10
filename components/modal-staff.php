@@ -67,11 +67,15 @@ if( $bio ) : ?>
 
             <div class="staff-links">
 
-              <?php foreach( $links as $link ) : ?>
+              <?php foreach( $links as $link ) : 
+                
+                if( $link['url'] ) : ?>
 
-                <a href="<?php echo $link['url']; ?>"><?php echo $link['icon']; ?></a>
+                  <a href="<?php echo $link['url']; ?>"><?php echo $link['icon']; ?></a>
 
-              <?php endforeach; ?>
+                <?php endif;
+              
+              endforeach; ?>
 
             </div>
 
