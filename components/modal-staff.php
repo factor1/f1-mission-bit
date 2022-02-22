@@ -25,26 +25,32 @@ $bio = get_field($prefix . 'bio');
 
 $links = array(
   array(
+    'field' => $email,
     'url' => 'mailto:' . $email,
     'icon' => '<i class="fas fa-envelope"></i>'
   ),
   array(
+    'field' => $phone,
     'url' => 'tel:' . $phoneLink,
     'icon' => '<i class="fas fa-phone-alt"></i>',
   ),
   array(
+    'field' => $li, 
     'url' => $li,
     'icon' => '<i class="fab fa-linkedin-in"></i>',
   ),
   array(
+    'field' => $fb, 
     'url' => $fb,
     'icon' => '<i class="fab fa-facebook-f"></i>',
   ),
   array(
+    'field' => $in, 
     'url' => $in,
     'icon' => '<i class="fab fa-instagram"></i>',
   ),
   array(
+    'field' => $tw, 
     'url' => $tw,
     'icon' => '<i class="fab fa-twitter"></i>',
   )
@@ -69,7 +75,7 @@ if( $bio ) : ?>
 
               <?php foreach( $links as $link ) : 
                 
-                if( $link['url'] ) : ?>
+                if( $link['field'] ) : ?>
 
                   <a href="<?php echo $link['url']; ?>"><?php echo $link['icon']; ?></a>
 
