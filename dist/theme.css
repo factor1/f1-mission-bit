@@ -3336,6 +3336,44 @@ input[type="submit"] {
     min-width: 9.375rem; } }
 
 /**
+ * Accordions (Global)
+ * 
+ * @package F1 Mission Bit 
+ * @author Factor1 Studios
+ * @since 0.0.1
+ */
+.accordions-section {
+  padding: 0 env(safe-area-inset-right) 0 env(safe-area-inset-left); }
+  .accordions-section .container {
+    padding: 6.25rem 0; }
+  .accordions-section .accordion {
+    padding-top: 1.25rem; }
+    .accordions-section .accordion__header {
+      color: #3e4786;
+      overflow: auto;
+      cursor: default;
+      transition: all .4s ease; }
+      .accordions-section .accordion__header i {
+        float: right;
+        margin-right: 0.3125rem;
+        color: #3e4786;
+        transition: all .4s ease; }
+      .accordions-section .accordion__header:focus, .accordions-section .accordion__header:hover {
+        color: #61cabb; }
+        .accordions-section .accordion__header:focus i, .accordions-section .accordion__header:hover i {
+          color: #61cabb; }
+      .accordions-section .accordion__header.open i {
+        transform: rotate(-180deg); }
+    .accordions-section .accordion__content {
+      display: none; }
+    .accordions-section .accordion + .accordion {
+      border-top: 0.0625rem solid #61cabb; }
+
+@media screen and (max-width: 47.9375em) {
+  .accordions-section .container {
+    padding: 3.125rem 0; } }
+
+/**
  * Post List
  * 
  * @package F1 Mission Bit 

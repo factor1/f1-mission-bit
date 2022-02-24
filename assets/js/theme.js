@@ -141,4 +141,17 @@ $(document).ready(function() {
       ]
     });
   }
+
+  // Accordions 
+  $(".accordion__header").on("click", function() {
+    $(this).toggleClass("open");
+    $(this).siblings(".accordion__content").slideToggle();
+  });
+
+  $(".accordion__header").on("keyup", function(e) {
+    if( e.which == 13) {
+      $(this).toggleClass("open");
+      $(this).siblings(".accordion__content").slideToggle();
+    }
+  });
 });

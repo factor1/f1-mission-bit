@@ -15120,7 +15120,19 @@ _micromodal.default.init();
         }
       }]
     });
-  }
+  } // Accordions 
+
+
+  (0, _jquery.default)(".accordion__header").on("click", function () {
+    (0, _jquery.default)(this).toggleClass("open");
+    (0, _jquery.default)(this).siblings(".accordion__content").slideToggle();
+  });
+  (0, _jquery.default)(".accordion__header").on("keyup", function (e) {
+    if (e.which == 13) {
+      (0, _jquery.default)(this).toggleClass("open");
+      (0, _jquery.default)(this).siblings(".accordion__content").slideToggle();
+    }
+  });
 });
 },{"bowser":"../../node_modules/bowser/es5.js","headroom.js":"../../node_modules/headroom.js/dist/headroom.js","micromodal":"../../node_modules/micromodal/dist/micromodal.es.js","jquery":"../../node_modules/jquery/dist/jquery.js","waypoints/lib/noframework.waypoints.min":"../../node_modules/waypoints/lib/noframework.waypoints.min.js","countup.js/dist/countUp.min.js":"../../node_modules/countup.js/dist/countUp.min.js","slick-carousel/slick/slick":"../../node_modules/slick-carousel/slick/slick.js"}]},{},["theme.js"], null)
 //# sourceMappingURL=theme.js.map
