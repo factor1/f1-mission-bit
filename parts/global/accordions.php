@@ -10,6 +10,7 @@
 // Accordions Custom Fields 
 $section = 'accordions_section_';
 $colSpan = get_sub_field($section . 'column_span');
+$intro = get_sub_field($section . 'intro');
 
 if( have_rows($section . 'accordions') ) : ?>
 
@@ -18,7 +19,9 @@ if( have_rows($section . 'accordions') ) : ?>
       <div class="row row--justify-content-center">
         <div class="col-<?php echo $colSpan; ?>">
 
-          <?php while( have_rows($section . 'accordions') ) : the_row();
+          <?php echo $intro;
+
+          while( have_rows($section . 'accordions') ) : the_row();
             $headline = get_sub_field('headline');
             $content = get_sub_field('content'); ?>
 
