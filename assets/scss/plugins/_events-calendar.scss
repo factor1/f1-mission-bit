@@ -35,3 +35,17 @@ button {
 .tribe-events-calendar-month__day-date-daynum {
   font-size: rem(24);
 }
+
+.tribe-events-c-view-selector__button {
+  -webkit-appearance: none;
+  border: none;
+  border-radius: 50%;
+  background-color: $navy;
+  color: $white;
+  transition: all .4s ease;
+
+  &:focus,
+  &:hover {
+    transform: translateY(-5px);
+  }
+}

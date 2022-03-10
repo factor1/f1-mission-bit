@@ -3512,5 +3512,15 @@ button {
 .tribe-events-calendar-month__day-date-daynum {
   font-size: 1.5rem; }
 
+.tribe-events-c-view-selector__button {
+  -webkit-appearance: none;
+  border: none;
+  border-radius: 50%;
+  background-color: #3e4786;
+  color: #fff;
+  transition: all .4s ease; }
+  .tribe-events-c-view-selector__button:focus, .tribe-events-c-view-selector__button:hover {
+    transform: translateY(-5px); }
+
 
 /*# sourceMappingURL=theme.css.map */
