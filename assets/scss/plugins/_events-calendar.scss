@@ -43,9 +43,14 @@ button {
   background-color: $navy;
   color: $white;
   transition: all .4s ease;
+  padding: rem(15) !important;
 
   &:focus,
   &:hover {
     transform: translateY(-5px);
+  }
+
+  .tribe-common-c-svgicon {
+    margin: 0;
   }
 }

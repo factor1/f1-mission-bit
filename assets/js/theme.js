@@ -124,12 +124,12 @@ $(document).ready(function() {
     $(".logo-slider__slider").slick({
       autoplay: true,
       autoplaySpeed: 5000,
-      slidesToShow: 6,
+      slidesToShow: 4,
       responsive: [
         {
           breakpoint: 1024,
           settings: {
-            slidesToShow: 4
+            slidesToShow: 3
           }
         },
         {

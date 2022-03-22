@@ -88,6 +88,11 @@ a {
 
 // Media Queries 
 @media screen and (max-width: $small-breakpoint) {
+
+  p {
+    line-height: 1.5;
+  }
+  
   h1 {
     font-size: rem(42);
   }
