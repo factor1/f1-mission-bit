@@ -74,6 +74,22 @@
     .container {
       padding: rem(25) 0;
     }
+    
+    &__block {
+      padding: 20% 0 5%;
+
+      &:before {
+        top: 0;
+      }
+
+      &:after {
+        bottom: calc(5% + 25px);
+      }
+    }
+
+    * {
+      line-height: 1.5;
+    }
 
     .col-3 {
       border-top-left-radius: rem(20) !important;

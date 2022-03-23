@@ -28,7 +28,7 @@ if( $program ) :
       <div class="row row--justify-content-space-around<?php echo $rowClass; ?>">
 
         <?php // Image ?>
-        <div class="col-3 sm-col-4 text-center">
+        <div class="col-4 sm-col-4 text-center">
 
           <?php if( $img ) : ?>
 
